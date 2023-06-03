@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="Thông tin nhân viên"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_manv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã NV:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_3" />
+
+    <EditText
+        android:id="@+id/et_manv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_manv"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_3" />
+
+    <TextView
+        android:id="@+id/tv_tennv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên NV:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_manv" />
+
+    <EditText
+        android:id="@+id/et_tennv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_tennv"
+        app:layout_constraintTop_toBottomOf="@id/et_manv" />
+
+    <TextView
+        android:id="@+id/tv_gtnv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới tính:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_tennv" />
+
+    <RadioGroup
+        android:id="@+id/rg_gioitinh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_gtnv"
+        app:layout_constraintTop_toBottomOf="@id/et_tennv">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rb_nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rb_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_xoatrangnv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa trắng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg_gioitinh" />
+
+    <Button
+        android:id="@+id/bt_luunv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Lưu nhân viên"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt_xoatrangnv"
+        app:layout_constraintTop_toBottomOf="@id/rg_gioitinh" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

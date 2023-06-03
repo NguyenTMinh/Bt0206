@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_themnhanvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp"
+        android:paddingStart="16dp"
+        android:text="Thêm nhân viên"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_danhsachhanvien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp"
+        android:paddingStart="16dp"
+        android:text="Danh sách nhân viên"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_laptp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp"
+        android:paddingStart="16dp"
+        android:text="Lập trưởng/phó phòng"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_xoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp"
+        android:paddingStart="16dp"
+        android:text="Xóa phòng ban"
+        android:textSize="20sp" />
+
+</LinearLayout>
